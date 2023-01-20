@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.container{
+    position: relative;
+    min-height: 120vh;
+    
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bg::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images3.alphacoders.com/878/878874.jpg);
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(45%);
+}
+.menu{
+    position: relative;
+    padding: 20px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+* a{
+    text-decoration: none;
+}
+* li{
+    list-style: none;
+}
+.logo a{
+    font-size: 2rem;
+    color: #fff;
+    position: relative;
+    left: 3rem;
+}
+.menu ul{
+    display: flex;
+    gap: 10px;
+}
+.menu ul li{
+    padding:0 25px;
+}
+.menu ul li a{
+    font-weight:bold;
+    font-size: 14px;
+    color: #fff;
+}
+.menu ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-image: linear-gradient(to left,#8e8ed7,#bee8f1);
+    bottom: 25px;
+    transform: translateX(-100%);
+    border-radius: 25px;
+    transition: .8s;
+    
+}
+.menu ul li a:hover::after{
+    width: 3%;
+    opacity: 0.6;
+}
+.content{
+    width: 85%;
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.content .header .card{
+    width: 50%;
+    position: relative;
+}
+.content .header{
+    color: #fff;
+    padding: 50px;
+    
+}
+.content .header h3{
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+}
+.content .header h3 i{
+    color: orange;
+}
+.content .header h1{
+    font-size: 5rem;
+    letter-spacing: 2px;
+}
+.content .header p{
+    opacity: .8;
+    
+}
+.card{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+   
+}
+.card .box{
+    width: 200px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    position: relative;
+    transition: 0.4s;
+    
+}
+.card h2{
+    color: #fff;
+}
+.b1{
+    background-image: url(https://images6.alphacoders.com/802/thumbbig-802392.webp);
+}
+.b2{
+    background-image: url(https://images2.alphacoders.com/707/thumbbig-707395.webp);
+}
+.b3{
+    background-image: url(https://images6.alphacoders.com/696/thumbbig-696592.webp);
+}
+.b4{
+    background-image: url(https://images3.alphacoders.com/848/thumbbig-848580.webp);
+}
+.content .box h2{
+    position: absolute;
+    bottom: 7px;
+    left: 15px;
+}
+.content .box:hover{
+    transform: translateY(-15px);
+}
+.footer-container{
+    background-image:linear-gradient(to bottom,#2b2626,#5c6355);
+    
+}
+
+.footer{
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    justify-content: left;
+    
+}
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+}
+.footer-heading a{
+    color: #fff;
+    padding: 3px 80px;
+    position: relative;
+
+}
+.footer-heading h2{
+    color: #fff;
+    padding: 15px 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top: 3px;
+}

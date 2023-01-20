@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bg::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images3.alphacoders.com/878/878874.jpg);
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(45%);
+}
+.menu{
+    position: relative;
+    padding: 20px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+* a{
+    text-decoration: none;
+}
+* li{
+    list-style: none;
+}
+.logo a{
+    font-size: 2rem;
+    color: #fff;
+}
+.menu ul{
+    display: flex;
+    gap: 10px;
+}
+.menu ul li{
+    padding:0 25px;
+}
+.menu ul li a{
+    font-weight:bold;
+    font-size: 14px;
+    color: #fff;
+}
+.menu ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-image: linear-gradient(to left,#8e8ed7,#bee8f1);
+    bottom: 14px;
+    transform: translateX(-100%);
+    border-radius: 25px;
+    transition: .4s;
+    
+}
+.menu ul li a:hover::after{
+    width: 3%;
+    opacity: 0.6;
+}
+/*.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+.inputSearch{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    text-align: center;
+    justify-items: center;
+}
+.inputSearch input{
+    padding: 10px 150px;
+    border-radius: 12px;
+    margin: 0 20px;
+}
+.inputSearch button{
+    padding: 10px 10px;
+    border-radius: 12px;
+}
+.container{
+    position: relative;
+    margin: 5rem 0;
+}
+.container .content{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 70%;
+}
+.container .photo{
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    
+}
+.p1{
+    background-image: url(https://teawlay.com/medias/phuket-city-tour-5.jpg);
+}
+.p2{
+    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/fe/80/4f/beautiful-view-point.jpg?w=1200&h=-1&s=1);
+}
